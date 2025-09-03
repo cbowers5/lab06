@@ -1,66 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Portfolio</title>
 </head>
 <body>
-    <h1>CONCRETE</h1>
-    <p>What do I do I do what I do do I do what I do</p>
-    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-10/241029-Anthony-Richardson-ch-1423-89f305.jpg" alt="">
-    <p>I drive Ayy, ayy, ayy, ayy, ayy, but I'm happy I saw you today (Ayy, CGM, where you at?)
-Ayy, ayy, I'm a geekboy 'til I'm in a box
-She got goth ho swag, but it's Ricky
-Don't like when I buy her shit, either want my money or she picky
-But I'm happy I saw you today, I been looking all through the city
 
-[Verse]
-Wanna ruin my day? That's extra
-Got a sold-out show, pay extra
-New deal on the way, want a M
-And the white folks know I got leverage
-I'm a gemini lookin' for a Kim
-Got a few Amber Rose, that's exes
-I'm a drank head, but I hate Texas
-Kind of camera shy, so I hate Cali
-Met a bougie ass bitch that's messy
-Hellcat's too loud for the valley
-I'm a Ken doll in love with a Brat
-Know a few G.I Joe's that'll wack you
-And my pop so dark, think it's Tris
-Four reds in the twenty ounce, nasty
-And I don't wear Chrome unless it's Matty
-And I make an appointment like Trent
-I'm a mob boss, can't just hit me
-Get geeked like Tune, but it's Fenty
-Got a real boss bitch like Flacko
-She'll wear my merch like Fenty
-Finna cross my mans like Alpo
-Put my grandmother's voice on the outro
-Doing one twenty all up the shoulder
-I ain't flirting with you, death, but we're closer
-Giving luxury but junkie
-Can't stop gettin' high with the money
-And I'm happy I saw you today
-I just know you finna ask me for money
-On drugs, they clear, it's simple
-No ashtray, fuck it, it's a rental
-Out of sight, out of mind, it's mental
-You might also like
-[Chorus]
-Damn, but I'm happy I saw you today
-Ayy, ayy, I'm a geekboy 'til I'm in a box
-She got goth ho swag, but it's Ricky
-Don't like when I buy her shit, either want my money or she picky
-But I'm happy I saw you today, I been looking all through the city
+  <header>
+    <h1>Welcome to My Web Portfolio</h1>
+    <p>Learning HTML step-by-step</p>
+  </header>
 
-[Outro]
-Luxury, but a junkie
-Give her luxury, but a junkie
-But I'm happy I saw you today
-Ayy, ayy, luxury, but a junkie
-Give her luxury, but a junkie
-But I'm happy I saw you today</p>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#basics">Web Development Basics</a></li>
+      <li><a href="#code">Sample Code</a></li>
+      <li><a href="#schedule">Weekly Schedule</a></li>
+      <li><a href="#lab">Lab Details</a></li>
+      <li><a href="#contactme">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="https://www.clipartmax.com/png/middle/0-884_big-image-man-and-woman-animated.png" alt="Profile Illustration" width="200" height="200">
+        <figcaption>This is a figure element with an image and caption.</figcaption>
+      </figure>
+      <p>I love web development! It allows me to build cool things with just code.</p>
+      <p>HTML uses tags like <code>&lt;div&gt;</code> and <code>&lt;section&gt;</code> to organize content.</p>
+    </section>
+
+    <section id="basics">
+      <h2>Web Development Basics</h2>
+      <p>
+        HTML stands for <strong>HyperText Markup Language</strong>. It structures content using tags
+        like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;img&gt;</code>.
+      </p>
+    </section>
+
+    <section id="code">
+      <h2>Sample Code</h2>
+      <pre>
+function hello() {
+  console.log("Hello, world!");
+}
+      </pre>
+      <blockquote>
+        "Web development is like magic — except it’s real and you can learn it."
+      </blockquote>
+    </section>
+
+    <section id="schedule">
+      <h2>Weekly Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Lecture</td>
+            <td>10:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Lab</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td colspan="2">Project Work - 1:00 PM</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">&copy; 2025 My Web Portfolio. All rights reserved.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="lab">
+      <h2>Lab Details</h2>
+      <p>
+        Lab sessions take place every Wednesday in EnGeo2203 at 2:00 PM.
+        Attendance is required.
+      </p>
+    </section>
+
+
+    <section id="contactme">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <label for="name">Name: </label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="email">Email: </label>
+        <br>
+        <input type="text" id="email">
+        <br>
+        <br>
+        <label for="color">Favorite Color: </label>
+        <br>
+        <input type="color" id="color">
+        <br>
+        <br>
+        <label for="birthday">Birthday: </label>
+        <br>
+        <input type="date" id="birthday">
+        <br>
+        <br>
+        <label for="choice">Are you enjoying this lab? </label>
+        <br>
+        <input type="radio"> Yes
+        <br>
+        <input type="radio"> No
+        <br>
+        <br>
+        <label for="course">Course: </label>
+        <br>
+        <select>
+          <option>Select</option>
+          <option>IT301</option>
+          <option>IT333</option>
+          <option>IT203</option>
+          <option>IT215</option>
+          <option>IT240</option>
+          <option>IT212</option>
+        </select>
+        <br>
+        <br>
+        <div><label for="feedback">Any Feedback? </label></div>
+        <div><textarea id="feedback"></textarea></div>
+        <br>
+        <input type="submit">
+        <br>
+        <br>
+
+
+      </form>
+
+
+  </section>
+
+  </main>
+
+
+  <footer>
+    <p>Made with ♥ and HTML5.</p>
+    <p>&copy; 2025 Caleb Bowers. All rights reserved.</p>
+    <p>Last updated: September 1, 2025</p>
+  </footer>
 </body>
 </html>
